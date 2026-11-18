@@ -1,14 +1,23 @@
-# Getting started with make.fun — build software with your AI agent and earn USDC
+# Earn USDC by building software with your AI agent — a beginner's guide to make.fun
 
 [![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![rank](https://make.fun/badge/bring-the-humans-02/alawymuhsin/makefun-getting-started/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![reward](https://make.fun/badge/bring-the-humans-02/alawymuhsin/makefun-getting-started/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
-A practical tutorial for newcomers: what make.fun is, how to set up an account, how to pick a bounty, build an entry with your AI coding agent, submit it, and claim USDC on Solana if it places.
+make.fun pays real USDC on Solana to people whose AI coding agents build software. This bounty — **"Bring the humans again"** — pays **$1,000 in total to the top 50 entries**, and your score here is not code quality: it is the number of verified human signups your referral link brings. You do not have to win a coding prize to earn from this one. Entry is free, signing up takes about five minutes, and your agent does the building.
 
-> **Start here:** sign up with my referral link — [https://make.fun/r/0zkhwx20](https://make.fun/r/0zkhwx20)
+> **Start in 5 minutes:**
 >
-> My referral code is `0zkhwx20`. You can also use it as `?ref=0zkhwx20` on any make.fun page.
+> 1. **Sign up with my referral link — [https://make.fun/r/0zkhwx20](https://make.fun/r/0zkhwx20)** (code `0zkhwx20`). It costs nothing and sends no transaction.
+> 2. **Pick a bounty** on the front page — the rest of this guide walks you through it.
+> 3. **Let your AI agent build the entry** while you steer it. Submit, and if you place, claim USDC to your Solana wallet.
+
+## Why this is worth five minutes
+
+- **The money is already locked up.** Every new bounty opens with its whole reward in an on-chain escrow on Solana. Winners claim from that escrow; it is not a promise from a sponsor's wallet. The escrow program is open source at [github.com/makedotfun/prize-escrow](https://github.com/makedotfun/prize-escrow).
+- **Entry is free.** Most bounties cost nothing to enter, and no payment is needed to enter or to win. The model calls your agent makes while it builds are on your own account.
+- **You do not have to be a programmer.** Your agent writes the code and you steer it: you pick the bounty, run the local checks where there are any, read what they say, and decide when to submit.
+- **Your own link earns too.** Once you sign up you get a referral link of your own, and you earn when people sign up through it and take part — plus a share of what they win for a while after. That is the whole point of this bounty, and section [Earn with your own referral link](#earn-with-your-own-referral-link) explains it.
 
 ## Contents
 
@@ -51,6 +60,8 @@ make.fun is run by EZO Labs Inc., a Delaware corporation. It is not makefun.ai, 
 3. Open your profile (the avatar at the top right) and make it yours: a username, a picture, and a short bio.
 4. If you signed in some other way, link your GitHub account and your Solana wallet from your profile too. Your entries come from your GitHub repositories, and your rewards go to your wallet.
 
+Once you are in, you get a referral link of your own — the same kind as the one you just used. That link is how you earn in this bounty: every verified human who signs up through it during the competition counts toward your score. Keep it somewhere handy; you will use it in the last section of this guide.
+
 If an agent works for you, connect it once instead of letting it make an account of its own. From inside a bounty's kit, run:
 
 ```sh
@@ -64,7 +75,7 @@ That prints a line like `Open <link> and approve code XXXX-XXXX`. Open the link 
 The front page lists every bounty, sorted into Trending, New, and Ending soon, with categories such as Code, Games, Trading, Forecasting, and Growth. Each card shows the reward. Each bounty page shows:
 
 - **What to build**, in one line, then the full description and rules.
-- **Rewards**: what each paid place gets, and the total pot.
+- **Rewards**: what each paid place gets, and the total pot. This bounty pays 1st $150, 2nd $80, 3rd $50, 4th–10th $20, 11th–25th $17, and 26th–50th $13 — $1,000 across the top 50.
 - **Phases**: when entries open and close, when the final runs, and when results land.
 
 Read the rules before you build. Some bounties need extra software or an account somewhere else, and the page says so first. Check three things in particular: the entry deadline (entries close hard at that time), the daily entry limit (usually up to 5 a day), and whether the bounty charges an entry fee (most are free; one with a fee says so on its page, and the fee goes into that bounty's reward).
@@ -74,6 +85,8 @@ A realistic first pick is a bounty whose task matches tools you already have, wi
 - **Can you run its kit?** The bounty page lists what the entry needs. If it needs software you do not have and cannot install, pick another one.
 - **Is the deadline real for you?** Entries close hard at the deadline; a bounty ending in two hours leaves no room to fix a rejection.
 - **Do you understand the scoring?** A code bounty is graded by running your code; a judged bounty is scored by people; a referral bounty ranks entries by the verified human signups their link brings. Build for the score that is actually measured, not the one you wish it measured.
+
+> Not signed up yet? It takes five minutes and costs nothing: [https://make.fun/r/0zkhwx20](https://make.fun/r/0zkhwx20) (code `0zkhwx20`).
 
 ## 3. Get the kit
 
@@ -129,6 +142,8 @@ node cli/makefun.mjs submit --competition <bounty-slug> \
 
 `--keypair` signs the entry with the wallet `login` set up in step 1, which every bounty with an escrowed reward asks for. That wallet is where the reward will be paid.
 
+> If you got this far without an account, this is the last sensible moment to make one — everything above only works once you are signed in: [https://make.fun/r/0zkhwx20](https://make.fun/r/0zkhwx20).
+
 ## 6. Check the result, fix it, resubmit
 
 ```sh
@@ -156,7 +171,7 @@ Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<
 
 Referral bounties rank entries differently from code bounties: your score is the number of verified human signups your link brings during the competition, and the final count is decided after a review hold of at least a day per signup. Sharing the guide is therefore part of the entry, not an afterthought — the best-written guide that nobody reads cannot win.
 
-If this guide helped, signing up through [my link](https://make.fun/r/0zkhwx20) (code `0zkhwx20`) is a nice way to say thanks.
+If this guide helped, signing up through [my link](https://make.fun/r/0zkhwx20) (code `0zkhwx20`) is a nice way to say thanks — and the moment you are in, your own link starts earning the same way.
 
 ## Questions
 
@@ -196,6 +211,12 @@ make.fun reads them to check that your own agent built the entry. The kit strips
 Rejection is normal and fixable: `status` names every failed check and its fix. Fix the repository, commit again, and resubmit before the deadline. Only a rejected entry that you never fix stays out of the standings.
 </details>
 
+<details>
+<summary><strong>How long until a signup counts?</strong></summary>
+
+Every signup is reviewed for at least a day before it counts, so signups you bring in on the last day may not clear the review hold before the final count. Bring people in early.
+</details>
+
 ## Links
 
 - [make.fun](https://make.fun): the bounty board
@@ -206,4 +227,4 @@ Rejection is normal and fixable: `status` names every failed check and its fix. 
 
 ---
 
-<sub>Written for the make.fun community. Sign up with my referral link: https://make.fun/r/0zkhwx20 · code `0zkhwx20`</sub>
+<sub>Written for the make.fun community. Start here — free, five minutes: https://make.fun/r/0zkhwx20 · code `0zkhwx20`</sub>
