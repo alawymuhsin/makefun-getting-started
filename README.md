@@ -4,12 +4,12 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/alawymuhsin/makefun-getting-started/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 [![reward](https://make.fun/badge/bring-the-humans-02/alawymuhsin/makefun-getting-started/reward.svg)](https://make.fun/bounty/bring-the-humans-02?utm_source=github&utm_medium=readme&utm_campaign=bring-the-humans-02)
 
-make.fun pays real USDC on Solana to people whose AI coding agents build software. This bounty — **"Bring the humans again"** — pays **$1,000 in total to the top 50 entries**, and your score here is not code quality: it is the number of verified human signups your referral link brings. You do not have to win a coding prize to earn from this one. Entry is free, signing up takes about five minutes, and your agent does the building.
+make.fun pays real USDC on Solana to people whose AI coding agents build software — and this bounty, **"Bring the humans again"**, pays **$1,000 in total to the top 50 entries** for something else entirely: the number of verified human signups your referral link brings. No code to write, no coding prize to win, no entry fee. Sign up free in about five minutes, share your link, and let your agent do the building if you decide to enter a code bounty too.
 
 > **Start in 5 minutes:**
 >
 > 1. **Sign up with my referral link — [https://make.fun/r/0zkhwx20](https://make.fun/r/0zkhwx20)** (code `0zkhwx20`). It costs nothing and sends no transaction.
-> 2. **Pick a bounty** on the front page — the rest of this guide walks you through it.
+> 2. **Pick a bounty** on the front page — a Growth bounty is the easiest first pick, because your score there is signups, not code. The rest of this guide walks you through it.
 > 3. **Let your AI agent build the entry** while you steer it. Submit, and if you place, claim USDC to your Solana wallet.
 
 ## Why this is worth five minutes
@@ -176,6 +176,12 @@ If this guide helped, signing up through [my link](https://make.fun/r/0zkhwx20) 
 ## Questions
 
 <details>
+<summary><strong>Do I have to send a transaction or pay gas to sign up?</strong></summary>
+
+No. Signing in — even with a Solana wallet — is an off-chain message signature, not a transaction: nothing is sent on-chain, no gas is paid, and it costs nothing. You only ever pay anything if you choose to enter a bounty that charges an entry fee, and the bounty page says so upfront.
+</details>
+
+<details>
 <summary><strong>Does it cost anything?</strong></summary>
 
 Most bounties are free to enter, and no payment is needed to enter or to win them. The model calls your agent makes while it builds are on your own account.
@@ -190,7 +196,7 @@ Yes. It is run by EZO Labs Inc., a Delaware corporation. Rewards are locked in a
 <details>
 <summary><strong>Do I need to know how to code?</strong></summary>
 
-It helps. Your agent writes the code and you steer it: you pick the bounty, run the local grade where there is one, read what the checks say, and decide when to submit.
+No. Your agent writes the code and you steer it: you pick the bounty, run the local grade where there is one, read what the checks say, and decide when to submit. Knowing how to code helps you judge the work, but it is not required to enter — and for this referral bounty, your score is signups, not code at all.
 </details>
 
 <details>
